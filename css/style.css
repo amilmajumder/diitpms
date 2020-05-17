@@ -1,0 +1,568 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+    {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+body{
+    position: relative;
+}
+/* ========================preloader css======================= */
+.preloader{
+    position: fixed;
+     z-index: 999999;
+     background-color: #fff;
+     width: 100%;
+     height: 100%;
+     
+ }
+ .preloader img{
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%,-50%);
+ }
+
+/* ========================Navbar=================== */
+.navbar {
+    position: fixed;
+    z-index: 9999;
+    padding: 0;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-brand img {
+    height: 80px;
+    line-height: 30px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item .nav-link {
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 18px;
+    font-weight: 400;
+    color: #444;
+    padding-right: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+.navbar-collapse .navbar-nav .nav-item .nav-link:after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 5px;
+    background: #1971c2;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: .3s all linear;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item .nav-link:hover {
+    color: #444;
+}
+
+.navbar-collapse .navbar-nav .nav-item .nav-link:hover:after{
+    opacity: 1;
+    width: 100%;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.bg{
+    background: #fff;
+    animation: menu 1s;
+}
+@keyframes menu {
+    from {
+        top: -100px
+    }
+
+    to {
+        top: 0px
+    }
+}
+.button1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    background: #1971c2; 
+    text-transform: capitalize;
+    border: 1px solid #1971c2;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: all linear .3s;
+}
+.button2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #444;
+    text-transform: capitalize;
+    border: 1px solid #1971c2;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all linear .3s;
+}
+/* ========================banner=================== */
+#banner {
+    background: #ffffff;
+    padding-top: 200px;
+    padding-bottom: 130px;
+}
+
+.banner-text h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+    color: #444;
+    letter-spacing: 3px;
+    padding-top: 20px;
+}
+
+.banner-text p {
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    padding-top: 15px;
+    padding-right: 100px;
+}
+.btn-main{
+    padding-top: 20px;
+}
+.bnr-btn {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #444;
+    text-transform: uppercase;
+    border: 1px solid #1971c2;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: all linear .3s;
+}
+
+.bnr-btn:hover {
+    background: #1971c2;
+    color: #fff;
+    border: 1px solid #1971c2;
+}
+.bnr-img{
+    text-align: center;
+}
+.bnr-img img{
+    height: 350px;
+}
+/* ========================about=================== */
+
+#about {
+    background: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding-bottom: 130px;
+}
+.head{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #666;
+}
+.abt-txt{
+    padding-top: 50px;
+}
+
+.abt-txt span {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    color: #444;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.abt-txt p {
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666666;
+    padding-top: 20px;
+    padding-right: 90px;
+}
+.about-main{
+    margin-top: 50px;
+    border: 10px solid #000;
+    border-radius: 10px;
+}
+
+/* ========================features=================== */
+#features {
+    position: relative;
+    background: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+.features-text h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #666;
+}
+.features-text span {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    color: #444;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.portfolio-img{
+    margin-top: 50px;
+}
+.portfolio-img img{
+    height: 350px;
+}
+.portfolio-text{
+    margin-top: 50px;
+}
+
+.portfolio-text p {
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 18px;
+    font-weight: 400;
+    color: #666;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 100px;
+}
+.poit-select ul li {
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 18px;
+    font-weight: 400;
+    color: #444;
+}
+
+/* ====================consultation======================== */
+
+#consultation {
+    background: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 20px;
+    padding-bottom: 130px;
+}
+
+.services-header Span {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    color: #444;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.services-header p {
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 18px;
+    font-weight: 400;
+    color: #666;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.consult ul li h3{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #444;
+}
+
+.consult ul li p{
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    padding-top: 5px;
+}
+.consult-img{
+    text-align: right;
+}
+.consult-img img{
+    height: 400px;
+}
+
+/* ======================services==================== */
+#services{
+    background: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+.serve-text span{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    color: #444;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.serve-v{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.serve{
+    margin-top: 100px;
+}
+.card{
+    background-color: transparent;
+    border: 0;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+.card-header{
+    padding: 0;
+    border: 2px solid #1971c2;
+}
+.card-body{
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+}
+.card-header .btn.btn-link.collapsed{
+    background: #fff;
+    color: #444;
+}
+.card-header button{
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #444;
+    text-align: left;
+    line-height: 30px;
+}
+.card-header button:hover{
+    background: #D35400;
+    color: #ECECEC;
+    text-decoration: none;
+}
+.card-header button:focus {
+    text-decoration: none;
+}
+.card-header button i{
+    float: right;
+    line-height: 30px;
+    transition: all linear .4s;
+}
+.card-header .btn.btn-link{
+    background: #fff;
+    color: #444;
+}
+.card-header .btn.btn-link i{
+    transform: rotate(90deg);
+}
+.card-header .btn.btn-link.collapsed i {
+    transform: rotate(0deg);
+}
+/* ======================contact==================== */
+#contact {
+    background: #fff;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+.team-header span{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    color: #3d3d3d;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.team-header p{
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    padding-top: 10px;
+}
+.contact-img{
+    margin-top: 30px;
+}
+.contact-form{
+    margin-top: 50px;
+}
+.contact-item h4{
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 18px;
+    font-weight: 400;
+    color: #444;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+.contact-item .input{
+    width: 100%;
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    background: #d4d4d4;
+    border: 0;
+    border-left: 1px solid #00b1ff;
+    padding: 10px;
+}
+.button{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #444;
+    background: #fff;
+    text-transform: uppercase;
+    border: 1px solid #1971c2;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-align: center;
+    transition: all linear .3s;
+    cursor: pointer;
+}
+.button:hover {
+    background: #1971c2;
+    color: #fff;
+    border: 1px solid #1971c2;
+}
+
+/* =========================partner========================= */
+#partner{
+    background: #fff;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+.spnr-img{
+    width: 300px;
+    height: 300px;
+    float: left;
+}
+.spnr-img img{
+    width: 100%;
+    height: 100%;
+}
+/* =========================footer========================= */
+
+#footer{
+    background: #000;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.footer-main i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #1971c2;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    color: #fff;
+    line-height: 40px;
+}
+.footer-item{
+    margin-top: 20px;
+}
+.footer-item ul li{
+    display: inline-block;
+}
+.footer-item ul li a{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+.footer-text ul li{
+    display: inline-block;
+}
+.footer-text ul li span{
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    padding-right: 10px;
+}
+.footer-text ul li span i{
+    font-size: 18px;
+    color: #1971c2;
+    padding-right: 5px;
+}
+/* ===============bact-top================= */
+#last-footer{
+    background: #2b8a3e;
+    padding-top: 20px;
+}
+.last-text{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+}
+/* ===============bact-top================= */
+.back-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+.back-top i {
+    width: 40px;
+    height: 40px;
+    background: #1971c2;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+}
